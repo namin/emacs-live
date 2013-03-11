@@ -66,6 +66,10 @@
      (ido-indicator ((t (:foreground "black" :background "deep pink"))))
      (minibuffer-prompt ((t (:foreground "dark blue" :background "grey85"))))
 
+      ;;diff colours
+     (diff-removed ((t (:foreground "dark red"))))
+     (diff-added ((t (:foreground "dark green"))))
+
      ;; magit
      (magit-item-highlight ((t (:background "gray15"))))
      (magit-diff-add ((t (:foreground "chartreuse3"))))
@@ -90,6 +94,12 @@
       (undo-tree-visualizer-active-branch-face ((t (:foreground "deep pink" :background "grey40"))))
 
       (markdown-link-face ((t (:background "#FBDE2D"))))
+
+     (git-gutter:modified ((t (:foreground "deep pink" :background "grey85"))) )
+     (git-gutter:deleted ((t (:foreground "grey85" :background "grey85"))) )
+     (git-gutter:added ((t (:foreground "#4c83ff" :background "grey85" ))) )
+     (git-gutter:unchanged ((t (:background "grey85" ))) )
+
      )
    ))
 
@@ -99,11 +109,6 @@
  '(mumamo-background-chunk-submode1 ((((class color) (background dark)) (:background "black"))))
 
  '(eval-sexp-fu-flash ((((class color) (background dark)) (:background "grey15" :foreground "DeepPink3"))))
-
- ;;diff colours
- '(diff-removed ((t (:foreground "Red"))) 'now)
- '(diff-added ((t (:foreground "Green"))) 'now)
-
 
  ;;ediff
  '(ediff-even-diff-A ((((class color) (background dark)) (:background "dark green"))))
